@@ -1,0 +1,51 @@
+body{padding-top: 5px;}
+.main-container{min-height: 300px;}
+/*Hover effect*/
+.card
+{
+  width: 100%; 
+  transition: background 0.5s ease;
+  background: rgba(0, 0, 0, 0);
+  top: 0;
+  left: 0;
+}
+ .overlay {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background: rgba(0, 0, 0, 0);
+   transition: background 0.5s ease;
+ }
+ 
+ .card:hover .overlay {
+   display: block;
+   background: rgba(0, 0, 0, .3);
+ }
+ 
+ 
+ 
+ .card .button {
+   position: absolute;
+   width: 100%;
+   left:0;
+   top: 180px;
+   text-align: center;
+   opacity: 0;
+   transition: opacity .35s ease;
+ }
+ 
+ .card .button a {
+   width: 200px;
+   padding: 12px 48px;
+   text-align: center;
+   color: white;
+   border: solid 2px white;
+   z-index: 1;
+   text-decoration: none;;
+ }
+ 
+ .card:hover .button {
+   opacity: 1;
+ }
